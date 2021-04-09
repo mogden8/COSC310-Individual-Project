@@ -1,0 +1,138 @@
+hi
+hello
+sup
+what' up
+what up
+hey
+.Hi, welcome to GymBot! How can I help you?
+time
+timing
+hours
+days
+open
+close
+.Are you interested in working hours? The Gym is open from 5:00 am to 10:00 pm, all days of the week.
+front desk
+desk
+attendant
+.We always have an attendant at the entrance of our gym. If you require more in-depth assistance than what I can give, you can go visit them.
+help
+.GymBot here. If you have questions about our gym, I'm here to answer them.
+map
+.Visit our website for an overview of our locale.
+facil
+.We have change-rooms catering to both genders. Each also house toilets, sinks and showers.
+washroom
+bathroom
+.Both the male and female change-rooms have washrooms.
+shower
+showers
+.Located in the change-room. We also sell soap packets at the front desk.
+equip list 
+list equip 
+list
+.We carry an extensive selection of dumbbells and most modern weight training machines. We have a cardio section with twenty different treadmills. If you would like to know more, check out our website.
+new equip 
+equip new 
+new
+.Our cardio section was just updated with new treadmills!
+equip
+.Our gym includes world class equipment personally used by Sylvester Stallone.
+treadmil
+.We carry a selection of 20 Sole F80 Model treadmills
+dumbbel
+.Our dumbbell section carries weights from the low half pound all the way to the hundreds. We have copies of each weight so nobody has to wait for others to finish their set!
+machin
+.We carry most of the modern weight training machines. You can find typical ones like the leg press, shoulder press and all varieties of cable machines.
+exercises
+exercise
+rout
+program
+.Are you interested in some of our recommended beginner routines? Type "[Body Part] routine" and I will tell you some recommendations!
+member
+.Anyone over the age of 18 can register for membership. Check out our website for more info.
+membership
+.You can register for membership on our website!
+cost
+membership cost
+cost membership
+.Our basic membership plan is $10.99 monthly. You can see some of our advanced plans (and discounts!) on our website.
+discount
+deals
+.Check our website for discounts and daily deals!
+owner
+owned
+own
+boss
+.Our owner is Arnold Schwarzenegger
+chest routine
+routine chest
+chest
+pec
+pecs
+.A beginner routine would consist of push-ups and light dumbbell presses until you can confidently switch to the Bench press
+leg routine
+routine leg
+leg
+legs
+.A beginner routine starts with basic body-weight squats and the leg presses. When you are comfortable, you can move up to barbell squats (And front-squats if you want to perfect your form)
+back routine
+routine back
+back
+.A beginner routine would begin with low-weight one-arm dumbbell rows. Once you are sufficiently comfortable, you can add in cable rows, assisted pull-ups and heavier dumbbell rows
+calf routine
+calves routine
+routine calf
+routine calves
+calf
+calves
+.Calf raises are the easiest exercise for beginners looking to train their calves. We offer calf machines but you can also use our assortment of dumbbells to help you.
+bicep routine
+routine bicep
+bicep
+biceps
+.Curls are typically very easy for newcomers to jump into. We recommend our beginners and veterans alike start with dumbbell or cable curls.
+tricep routine
+routine tricep
+tricep
+triceps
+.Overhead tricep extensions are a good start to a tricep routine. If you do not feel comfortable with a weight, you can also try bodyweight tricep dips.
+forearms routine
+routine forearms
+forearm
+forearms
+.The simplest starter exercise would be wrist curls using a dumbbell. We also offer several twist gadgets to ease training of forearms.
+shoulder routine
+routine shoulder
+shoulder
+shoulders
+.Dumbell overhead press is a good exercise for beginners. We also have shoulder press machines if you are not confident in your stability.
+traps routine
+routine traps
+trap
+traps
+.Shrugs are very easy to get the hang of. When you advance sufficiently, you can use heavier equipment. Deadlift bars can be useful for shrugs.
+ab routine
+abs routine
+routine ab
+routine abs
+ab
+abs
+.Crunches! They are by far the simplest exercise for beginners to get a head-start on their six-pack. We also offer adjustable incline crunch machines.
+trainer
+trainers
+teacher
+teachers
+instructor
+instructors
+.We have 3 trainers on rotation. You can see their schedules on our website.
+do you like person
+.I like person .
+do you know person
+.of course i know person .
+where is person
+.At the gym of course.
+is person working
+.if the gym is open person is working. no holidays for the wicked. contact person at person @gmail.com.
+my name is person
+.well nice to finally meet person .

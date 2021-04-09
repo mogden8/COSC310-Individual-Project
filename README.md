@@ -1,5 +1,5 @@
 
-# Assignment Two  
+# Individual Project Submission
 
 **COSC 310 Project Group #8**  
 

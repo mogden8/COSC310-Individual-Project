@@ -56,14 +56,33 @@ public class Contents extends JLabel{
 				e1.printStackTrace();
 			}
 			input.setText("");
+			
+		
 		});
 		button.setFont(f);
 		button.setSize(100, 100);
 		button.setBounds(3*w/4 + 10, 3*h/4, 100, 100);
 		button.setBackground(Color.white);
 		
+		JButton button2 = new JButton("English");
+		button2.addActionListener(e -> {
+			output.changeLang();
+			if (output.langEng)
+			button2.setText("English");
+			else button2.setText("French");
+			
+			
+		
+		});
+		
+		button2.setFont(f);
+		button2.setSize(100, 100);
+		button2.setBounds(3*w/4 + 10, 2*h/4, 100, 100);
+		button2.setBackground(Color.white);
+		
 		add(scroller);
 		add(button);
+		add(button2);
 		add(input);
 		updateUI();
 	}

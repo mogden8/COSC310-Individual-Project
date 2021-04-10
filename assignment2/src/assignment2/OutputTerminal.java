@@ -12,6 +12,7 @@ import javax.swing.JTextArea;
 
 public class OutputTerminal extends JTextArea{
 	ChatBot chatbot = new ChatBot();
+	Boolean langEng=true;
 
 	public OutputTerminal() {
 		setBackground(Color.white);
@@ -31,6 +32,16 @@ public class OutputTerminal extends JTextArea{
 			setText(getText() + "\n human: " + s);
 			setText(getText() + "\n Bot: " + response + "\n");
 			POSTagger.checkUserInput(s);
+		}
+	}
+	
+	public void changeLang() {
+		if(chatbot.langEng) {
+		chatbot.langEng=false;
+		langEng=false;}
+		else {
+			chatbot.langEng=true;
+			langEng=true;
 		}
 	}
 	

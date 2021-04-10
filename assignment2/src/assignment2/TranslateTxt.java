@@ -19,17 +19,11 @@ public class TranslateTxt
         Translate t = new Translate.Builder(
                 GoogleNetHttpTransport.newTrustedTransport()
                 , GsonFactory.getDefaultInstance(), null)
-                // Set your application name
                 .setApplicationName("TranslateAPI")
                 .build();
         Translate.Translations.List list = t.new Translations().list(
-                Arrays.asList(
-                        // Pass in list of strings to be translated
-                        reply),
-                // Target language
-                targetLang);
+                Arrays.asList(reply),targetLang);
 
-        // TODO: Set your API-Key from https://console.developers.google.com/
         String transText="";
         list.setKey("AIzaSyCQEsTS2gmruIxLuDPGHDhIPbaExQnfcTM");
         TranslationsListResponse response = list.execute();

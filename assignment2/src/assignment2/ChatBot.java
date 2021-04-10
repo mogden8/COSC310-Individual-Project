@@ -24,6 +24,7 @@ public class ChatBot {
 	private SentimentAnalyzer sentiment;
 	private Stemmer stemmer;
 	private PersonFinder personFinder;
+	Boolean langEng=true;
   
 	public ChatBot() {
 		//initializing rules with one tuple
@@ -62,6 +63,7 @@ public class ChatBot {
     	String[] words = input.split("\\s+");
     	Boolean frenchPresent=false;
     	List<String> list = Arrays.asList(words);
+    	String resp="";
     	
     	//if text is not in English, translate
     	input=TranslateTxt.translateText(input, "EN");
@@ -92,7 +94,9 @@ public class ChatBot {
 		         JSONObject obj5=(JSONObject)obj3.get("duration");
 		         String distance=(String) obj4.get("text");
 		         String traveltime=(String) obj5.get("text");
-		         return "The gym is "+distance+" or "+traveltime+" travel time by car from "+source;
+		         resp = "The gym is "+distance+" or "+traveltime+" travel time by car from "+source;
+		         if(!langEng) resp=TranslateTxt.translateText(resp, "FR");
+		         return resp;
 		    }
 		catch(Exception e) {
 		    e.printStackTrace();
@@ -101,7 +105,9 @@ public class ChatBot {
     	
     	// if first sentence in sentence is addressing bot
     	if(words[0].equals("you")) {
-    		return addressFeedback(input);
+    		resp = addressFeedback(input);
+	         if(!langEng) resp=TranslateTxt.translateText(resp, "FR");
+	         return resp;
     	}
     	// check to see if a person was mentioned in input 
     	boolean personRefernce = personFinder.findPerson(input);

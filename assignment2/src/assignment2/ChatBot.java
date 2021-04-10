@@ -5,11 +5,16 @@ import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import assignment2.TranslateTxt;
 import java.util.Arrays;
+import java.util.List;
 import java.util.HashMap;
 import java.util.HashSet;
 
 //new package imported that allows for Regular Expressions
 import java.util.regex.*;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 public class ChatBot {
 	
@@ -56,9 +61,43 @@ public class ChatBot {
     	
     	String[] words = input.split("\\s+");
     	Boolean frenchPresent=false;
+    	List<String> list = Arrays.asList(words);
     	
     	//if text is not in English, translate
     	input=TranslateTxt.translateText(input, "EN");
+    	
+    	//if "far" and "from" are present, find the location after from, return distance to gym
+    	if (list.contains("far") && list.contains("from")) {
+    		int loc = list.indexOf("from");
+    		String source=list.get(loc+1);
+    		String data="";
+    		try {
+    			data = GetDistance.calculate(source, "Seattle");
+    		} catch (IOException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		
+    		 JSONParser parser = new JSONParser();
+		        try {
+
+		         Object obj = parser.parse(data);
+		         JSONObject jsonobj=(JSONObject)obj;
+
+		         JSONArray dist=(JSONArray)jsonobj.get("rows");
+		         JSONObject obj2 = (JSONObject)dist.get(0);
+		         JSONArray disting=(JSONArray)obj2.get("elements");
+		         JSONObject obj3 = (JSONObject)disting.get(0);
+		         JSONObject obj4=(JSONObject)obj3.get("distance");
+		         JSONObject obj5=(JSONObject)obj3.get("duration");
+		         String distance=(String) obj4.get("text");
+		         String traveltime=(String) obj5.get("text");
+		         return "The gym is "+distance+" or "+traveltime+" travel time by car from "+source;
+		    }
+		catch(Exception e) {
+		    e.printStackTrace();
+		}
+    	}
     	
     	// if first sentence in sentence is addressing bot
     	if(words[0].equals("you")) {

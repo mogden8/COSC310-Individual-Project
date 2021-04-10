@@ -131,12 +131,18 @@ public class ChatBot {
         		//if match found, return respective response from rules
         		// if person Refernce is true then replace word person from output with the proper name
         		if(personRefernce) {
-        			return personFinder.replaceNameWithPerson(rules.get(keywords), true);
+        			resp = personFinder.replaceNameWithPerson(rules.get(keywords), true);
+       	         if(!langEng) resp=TranslateTxt.translateText(resp, "FR");
+       	         return resp;
         		}
-        		return rules.get(keywords);
+        		resp = rules.get(keywords);
+      	         if(!langEng) resp=TranslateTxt.translateText(resp, "FR");
+      	         return resp;
         	}
         }
-        return notUnderstood();
+        resp = notUnderstood();
+	         if(!langEng) resp=TranslateTxt.translateText(resp, "FR");
+	         return resp;
     }
 
     public String notUnderstood() {

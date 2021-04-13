@@ -15,4 +15,4 @@ Our goal is to make a Gym Helpline agent. A user may have a variety of questions
 
 # Documentation
 
-All documentation, descriptions of additions for Assignment 3 and screenshots for documentation can be found in the documentation folder of this repository, as well as listed within the ReadMe in the documentation folder.
+All documentation for the individual submission has been added to the top of the Read Me in the documentation folder.

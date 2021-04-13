@@ -1,6 +1,6 @@
 This folder will contain all documentations.
 
-# Individual Submission APIs Used#
+# Individual Submission APIs Used
 
 1) Google Translate API
    * Using the auto-detect function of the Google Translate API, this bot can understand any language as it is autmatically           translated to English before a response is produced

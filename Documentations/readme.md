@@ -1,4 +1,17 @@
-This folder will contain all documentations. All documentation requirements for Assignment 3 are within this ReadMe.
+This folder will contain all documentations.
+
+# Individual Submission APIs Used#
+
+1) Google Translate API
+   * Using the auto-detect function of the Google Translate API, this bot can understand any language as it is autmatically           translated to English before a response is produced
+   * The translation function is also used to return the output in the desired language
+   * A button was implemented to toggle between English and French input/output
+2) Google Maps Distance Matrix API
+   * Simple implementation able to tell the distance between locations
+   * Used to return distance data from location given by user to a pre set location of the gym (in this case, Seattle)
+   * Detects key words to locate potential location in input, then sends to Maps API to find distance to gym location
+   * Created function to parse through JSON data returned and get the distance in kilometres and travel time, then return to user
+
 # Required project plan documentations: #  
 (Assignment 2)
 
